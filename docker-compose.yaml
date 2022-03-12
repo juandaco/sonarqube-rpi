@@ -1,7 +1,7 @@
 services:
   sonarqube:
     container_name: sonarqube
-    build: .
+    image: juandaco/sonarqube-rpi:latest
     depends_on:
       - db
     environment:

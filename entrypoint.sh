@@ -21,7 +21,7 @@ do
     fi
 done < <(env)
 
-exec java -jar lib/sonar-application-$SONARQUBE_VERSION.jar \
+exec java -jar lib/sonar-application-$SONAR_VERSION.jar \
   -Dsonar.log.console=true \
   -Dsonar.jdbc.username="$SONAR_JDBC_USERNAME" \
   -Dsonar.jdbc.password="$SONAR_JDBC_PASSWORD" \
